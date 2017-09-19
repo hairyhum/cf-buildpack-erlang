@@ -52,9 +52,8 @@ echo `ls`
 ./configure
 make
 
-
 ln -s ${ERLROOT} /app/otp
-${ERLROOT}/Install -minimal /app/otp
+# ${ERLROOT}/Install -minimal /app/otp
 
 PATH=/app/otp/bin:$PATH
 export PATH
