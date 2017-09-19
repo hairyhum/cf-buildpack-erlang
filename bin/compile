@@ -52,11 +52,10 @@ echo `ls`
 ./configure
 make
 
-ln -s ${ERLROOT} /app/otp
+ln -s ${ERLROOT}/otp_src_20.0 /app/otp
 # ${ERLROOT}/Install -minimal /app/otp
 
-PATH=/app/otp/bin:$PATH
-export PATH
+export PATH=/app/otp/bin:$PATH
 
 cd $build
 
